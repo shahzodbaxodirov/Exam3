@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>3-oy_Imtihon</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Pizza order</h1>
+
+
+    <!-- FORM STARTED -->
+    <form id="form">
+      <input type="text" name="user_name" placeholder="Enter your name" required>
+      <input type="tel" name="user_phone" placeholder="Enter your phone number..." required>
+      <input type="email" name="user_email" placeholder="Enter your email..." required>
+
+
+      <span class="none_text">Dough thinckness:</span>
+      <input list="countries" name="selector" required placeholder="None" />
+      <select id="malumotlar">
+        <option data-click="10" value="Thin">Thin</option>
+        <option data-click="10" value="Medium">Medium</option>
+        <option data-click="10" value="Think">Think</option>
+      </select>
+
+      <br />
+      <label class="olcham">
+        <h2 class="head">Size:</h2>
+        <input class="input_size" id="size25" name="size" type="radio" value="25" data-click="10" />
+        <label class="razmer" for="size25" value="25"> 25sm </label>
+
+        <input class="input_size" id="size30" name="size" type="radio" value="30" data-click="12" />
+        <label class="razmer" for="size30" value="30"> 30sm </label>
+
+        <input class="input_size" id="size35" name="size" type="radio" value="35" data-click="15" />
+        <label class="razmer" for="size35" value="35"> 35sm </label>
+      </label>
+
+      <h2 class="mhead">On pizza:</h2>
+      <div class="product">
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Tomato" data-click="5" />
+          Tomato
+        </label>
+
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Turkey meat" data-click="5" />
+          Turkey meat
+        </label>
+
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Olive" data-click="5" />
+          Olive
+        </label>
+
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Pacled cucumber" data-click="5" />
+          Pecled cucumber
+        </label>
+
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Mushroom" data-click="5" />
+          Mushroom
+        </label>
+
+        <label class="addition">
+          <input type="checkbox" class="ingredient" value="Hourse meat" data-click="5" />
+          Hourse meat
+        </label>
+
+        <!-- ADD -->
+
+        <div class="ADD">
+          <h2 class="heading_add">Add:</h2>
+          <div class="add">
+            <label>
+              <input type="checkbox" class="added" value="Papper" data-click="3" />
+              Pepper
+            </label>
+
+            <label>
+              <input type="checkbox" class="dobavka" value="Sausages" data-click="3" />
+              Sausages
+            </label>
+          </div>
+          <button type="submit" class="save__btn">Save</button>
+        </div>
+      </div>
+    </form>
+    </form>
+  </div>
+
+  <ul id="list"></ul>
+  <script src="./script.js"></script>
+</body>
+
+</html>
